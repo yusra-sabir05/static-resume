@@ -1,0 +1,136 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text */
+}
+
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff; /* White background for the resume */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.sidebar {
+    background-color: #007bff; /* Blue sidebar */
+    color: #ffffff; /* White text */
+    padding: 30px;
+    width: 250px; /* Fixed width for sidebar */
+    text-align: center; /* Center align text */
+}
+
+.sidebar .profile-picture {
+    width: 100px; /* Set width for profile picture */
+    height: 100px; /* Set height for profile picture */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px; /* Space below the picture */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border: 2px solid #ffffff; /* Optional: Add a border for better visibility */
+}
+
+.sidebar h1 {
+    font-size: 28px; /* Name font size */
+    margin-bottom: 10px;
+}
+
+.sidebar .subtitle {
+    font-size: 18px; /* Subtitle for job title */
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #ffffff; /* White links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: block;
+    color: #ffffff; /* White links */
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.main-content {
+    flex:  1; /* Take remaining space */
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.tabs button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.content-section {
+    display: none; /* Hide all sections by default */
+}
+.content-section h2 {
+    margin-bottom: 20px; /* Add space below the section title */
+    font-size: 24px; /* Adjust font size for better visibility */
+    border-bottom: 2px solid #007bff; /* Optional: Add a bottom border for emphasis */
+    padding-bottom: 10px; /* Optional: Add padding below the title */
+}
+
+.content-section.active {
+    display: block; /* Show active section */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.skill-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.skill-list li {
+    background-color: #e9ecef; /* Light gray background for skills */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between skills */
+}

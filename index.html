@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="resume-container">
+        <aside class="sidebar">
+            <img src="mypic.jpeg" alt="Profile Picture" class="profile-picture" />
+            <h1>YUSRA Muhammad SABIR</h1>
+            <p class="subtitle">Frontend Developer</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:yusrasabir121@gmail.com">yusrasabir121@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+923172077696">+92 3091264606</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yusra-sabir-997b272b9/">LinkedIn</a>
+                <a href="https://github.com/yusra-sabir05">GitHub</a>
+                <a href="https://personal-portfolio-33.vercel.app/">Portfolio</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <nav class="tabs">
+                <button id="education-tab">Education</button>
+                <button id="skills-tab">Skills</button>
+                <button id="experience-tab">Experience</button>
+            </nav>
+
+            <section id="education-content" class="content-section active">
+                <h2>Education</h2>
+                <div class="card-grid"></div>
+            </section>
+
+            <section id="skills-content" class="content-section">
+                <h2>Skills</h2>
+                <ul class="skill-list"></ul>
+            </section>
+
+            <section id="work-experience-content" class="content-section">
+                <h2>Work Experience</h2>
+                <div class="card-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
